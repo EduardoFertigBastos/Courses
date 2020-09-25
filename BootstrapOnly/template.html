@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> Template Bootstrap</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/compiler/bootstrap.css">
+    <link rel="stylesheet" href="./style/css/style.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/fontawesome.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/brands.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/solid.css">
+</head>
+
+<body>
+    <header>
+        <!-- Menu -->
+        <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark bg-primary">
+
+            <div class="container">
+                <!-- Título -->
+                <a class="navbar-brand h1 mb-0" href="http://www.globo.com"> Curso </a>
+
+                <!-- Botão pra Responsividade -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Itens do Menu -->
+                <div class="collapse navbar-collapse" id="navbarSite">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="a"> Inicio </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="a"> Perfil </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="a"> Serviços </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="a"> Depoimentos </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="a"> Contatos </a>
+                        </li>
+                    </ul>
+
+                    <!-- Menu Dropdown -->
+                    <ul class="navbar-nav ml-auto">
+                        <li class="navbar-item dropdown">
+
+                            <a class="nav-item dropdown-toggle text-light" href="#" id="navDrop" data-toggle="dropdown">
+                                Social
+                            </a>
+
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="a"> Facebook </a>
+                                <a class="dropdown-item" href="a"> Twitter </a>
+                                <a class="dropdown-item" href="a"> Instagram </a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <!-- Campo "Pesquisar" e botão -->
+                    <form class="form-inline">
+                        <input class="form-control ml-4 mr-2" type="search" placeholder="Buscar...">
+                        <button class="btn btn-dark" type="submit"> Ok </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Carousel -->
+    <div id="carouselSite" class="carousel slide" data-ride="carousel">
+        <!-- Indicativos Carousel -->
+        <ol class="carousel-indicators">
+            <li data-target="#carouselSite" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselSite" data-slide-to="1"></li>
+            <li data-target="#carouselSite" data-slide-to="2"></li>
+        </ol>
+
+        <!-- "Dentro" do Carousel -->
+        <div class="carousel-inner">
+
+            <!-- Elementos Carousel <Foto> <Título> <Texto> -->
+            <div class="carousel-item active">
+                <img src="img/1.jpg" class="img-fluid d-block">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2> Je l'aime à mourir </h2>
+                    <p class="lead"> Moi je n'étais rien et voilà qu'aujourd'hui </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/2.jpg" class="img-fluid d-block">
+                <div class="carousel-caption d-none d-md-block text-warning">
+                    <h2> Sale el Sol </h2>
+                    <p class="lead"> Cuando menos piensas sale el sol </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/3.jpg" class="img-fluid d-block">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2> Whenever, Wherever </h2>
+                    <p class="lead"> We can always play by ear <br />
+                        But that's the deal my dear </p>
+                </div>
+            </div>
+
+            <!-- Botão "Voltar" -->
+            <a class="carousel-control-prev" href="#carouselSite" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only"> Anterior </span>
+            </a>
+
+            <!-- Botão Avançar -->
+            <a class="carousel-control-next" href="#carouselSite" role="button" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only"> Próximo </span>
+            </a>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Linha do Título -->
+        <div class="row">
+
+            <div class="col-12 text-center my-5">
+
+                <h1 class="display-3"><i class="fa fa-cogs text-primary" aria-hidden="true"></i> Lorem ipsum dolor sit
+                    amet </h1>
+                <p> Excepteur sint occaecat cupidatat non proident </p>
+            </div>
+
+        </div>
+
+        <!-- Scrool Spy -->
+        <div class="row">
+
+            <div class="col-sm-6 col-md-4 mb-3">
+
+                <!-- Menu Scrool Spy -->
+                <nav id="navbarVertical" class="navbar navbar-light bg-light">
+
+                    <nav class="nav nav-pills flex-column">
+
+                        <a class="nav-link" href="#item1"> Perspiciatis unde </a>
+                        <nav class="nav nav-pills flex-column ml-3">
+                            <a class="nav-link" href="#item1-1"> Un dia después </a>
+                            <a class="nav-link" href="#item1-2"> De la tormenta </a>
+                        </nav>
+
+                        <a class="nav-link mt-2" href="#item2"> Ut enim ad </a>
+
+                        <a class="nav-link mt-2" href="#item3"> Vel illum qui </a>
+                        <nav class="nav nav-pills flex-column ml-3">
+                            <a class="nav-link" href="#item3-1"> Te conoci en un dia de enero </a>
+                            <a class="nav-link" href="#item3-2"> Con la luna en mi nariz </a>
+                            <a class="nav-link" href="#item3-3"> Cuando vi que eras sincero </a>
+                        </nav>
+                    </nav>
+
+                </nav>
+
+            </div>
+
+            <!-- Texto Scrool Spy -->
+            <!-- Importante! Criar outra Classe para poder definir altura e tals -->
+            <div class="col-sm-6 col-md-8">
+                <div data-spy="scroll" data-target="#navbarVertical" data-offset="0" class="scrollspySite">
+                    <h4 id="item1"> Perspiciatis unde </h4>
+                    <p> You know my hips don't lie</p>
+
+                    <h5 id="item1-1"> Un dia después </h5>
+                    <p> All the attraction, the tension
+                        Don't you see, baby, this is perfection? </p>
+
+                    <h5 id="item1-2"> De la tormenta </h5>
+                    <p> And it's driving me crazy
+                        And I didn't have the slightest idea
+                        Until I saw you dancing (yeah)
+                        And when you walk up on the dance floor
+                        Nobody cannot ignore the way you move your body, girl (just move)
+                        And everything so unexpected, the way you right and left it
+                        So you can keep on shaking it (let's go) </p>
+
+                    <h4 id="item2"> Ut enim ad </h4>
+                    <p> I can see your body moving
+                        Half animal, half man
+                        I don't, don't really know what I'm doing
+                        But you seem to have a plan
+                        My will and self-restraint
+                        Have come to fail now, fail now
+                        See, I am doing what I can, but I can't so you know
+                        That's a bit too hard to explain </p>
+
+                    <h4 id="item3"> Vel illum qui </h4>
+                    <p> BAILA EN LA CALLE DE NOCHE, BAILA EN LA CALLE DE DIA, BAILA EN LA CALLE DE NOCHE, BAILA EN LA
+                        CALLE DE DIA</p>
+
+                    <h5 id="item3-1"> Te conoci en un dia de enero </h5>
+                    <p> You know you got me hypnotized
+                        So be wise (sí) and keep on (sí)
+                        Reading the signs of my body
+                        Señorita, feel the conga
+                        Let me see you move like you come from Colombia </p>
+
+                    <h5 id="item3-2"> Con la luna en mi nariz </h5>
+                    <p> every man's fantasy
+                        A refugee like me back with the Fugees from a third world country
+                        I go back like when 'Pac carried crates for Humpty Humpty
+                        We leave the whole club dizzy
+                        Why the CIA wanna watch us?
+                        Colombians and Haitians
+                        I ain't guilty, it's a musical transaction
+                        Bo bop so bop, no more do we snatch ropes
+                        Refugees run the seas 'cause we own our own boats (no fighting) </p>
+
+                    <h5 id="item3-3"> Cuando vi que eras sincero </h5>
+                    <p> I never really knew that she could dance like this
+                        She make a man wants to speak Spanish
+                        ¿Cómo se llama? (Sí), bonita (sí)
+                        Mi casa, su casa (Shakira, Shakira) </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-sm-center">
+            <!-- A página tem 12 colunas-->
+            <div class="col-sm-6 col-md-4">
+
+                <!-- Criação de Card-->
+                <div class="card mb-5">
+
+                    <!-- Corpo da Carta -->
+                    <div class="card-body">
+                        <img class="card-img-top foto-card" src="img/4.JPG">
+                        <h4 class="card-title"> Te conocí un día de enero</h4>
+                        <h6 class="card-subtitle mb-2 text-muted"> Con la luna en mi nariz</h6>
+                        <p class="card-text">Y como vi que eras sincero en tus ojos me perdí</p>
+                    </div>
+                    <!-- Lista do Card -->
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Ya vas a ver como van sanando</li>
+                        <li class="list-group-item">Poco a poco tus heridas</li>
+                        <li class="list-group-item">Ya vas a ver como va</li>
+                    </ul>
+                    <!-- Criação dos links -->
+                    <div class="card-body">
+                        <a href="#" class="card-link">Que torpe istraccíon</a>
+                        <a href="#" class="card-link">Y que dulce sensacíon</a>
+                    </div>
+                    <!-- Rodapé do Card -->
+                    <div class="card-footer text-muted">
+                        La misma vida a decantar la sal que sobra del mar
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+
+                <div class="card mb-5">
+
+                    <div class="card-body">
+                        <img class="card-img-top foto-card" src="img/5.JPG">
+                        <h4 class="card-title"> Y ahora andamos por el mundo</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">Como Eneas y Benitin</h6>
+                        <p class="card-text">Ya te encontré varios rasgunõs que te hicieron por ahi</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Y aunque hayas sido un extranjero</li>
+                        <li class="list-group-item">hasta en tu proprio pais</li>
+                        <li class="list-group-item">si yo te digo "qué dices tu?"</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Pero mi loco amor</a>
+                        <a href="#" class="card-link">Es tu mejor Doctor</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Tu aún dices "qué decís?"
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+
+                <div class="card mb-5">
+
+                    <div class="card-body">
+                        <img class="card-img-top foto-card" src="img/6.JPG">
+                        <h4 class="card-title">Voy a curarte el alma en duelo</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">Voy a dejaerte como nuevo</h6>
+                        <p class="card-text">Y todo va a pasar, pronto verás el sol brillar</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Y lloras de emoción oyendo un bandoneón</li>
+                        <li class="list-group-item">Y aunque parezcas despistado con ese caminar pausado</li>
+                        <li class="list-group-item">Conozco la razón que hace doler tu corazón</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link" data-toggle="modal" data-target="#siteModal">Tu más que nadie</a>
+                        <a href="#" class="card-link">Merece ser feliz</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Por eso quice hacerte esta canción
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid">
+
+        <div class="container">
+
+            <!-- Área do Título -->
+            <div class="row">
+
+                <div class="col-12 text-center">
+
+                    <h1 class="display-4"><i class="fas fa-video text-primary" aria-hidden="true"></i> Ready for the
+                        good times </h1>
+                    <p class="lead"> Cause everyday there's a war to fight and if I win or lose nevermind </p>
+                    <hr>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-12">
+
+                    <!-- Menu -->
+                    <nav>
+                        <ul class="nav nav-pills justify-content-center mb-4" id="pills-nav" role="tablist">
+
+                            <li class="nav-item">
+                                <a class="nav-link active" id="nav-pills-01" data-toggle="pill" href="#nav-item-01">
+                                    Nav-pills-01 </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" id="nav-pills-02" data-toggle="pill" href="#nav-item-02">
+                                    Nav-pills-02 </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link " id="nav-pills-03" data-toggle="pill" href="#nav-item-03">
+                                    Nav-pills-03 </a>
+                            </li>
+
+                        </ul>
+                    </nav>
+
+                    <!-- Conteúdo referente as opções do menu -->
+                    <div class="tab-content" id="nav-pills-content">
+
+                        <div class="tab-pane fade show active" id="nav-item-01" role="tabpanel">
+
+                            <div class="row">
+
+                                <div class="col-sm-6">
+
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item"
+                                            src="https://www.youtube.com/embed/weRHyjj34ZE"></iframe>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-6">
+
+                                    <p>Texto 01 Texto 01 Texto 01 Texto 01 Texto 01 Texto 01 Texto 01 Texto 01 Texto 01
+                                        Texto 01 Texto 01 Texto 01 Texto 01 Texto 01 Texto 01 Texto 01 Texto 01 Texto 01
+                                        Texto 01 Texto 01 Texto 01 Texto 01 Texto 01 Texto 01 Texto 01 Texto 01 Texto 01
+                                        Texto 01 Texto 01 Texto 01 Texto 01 Texto 01 Texto 01 Texto 01 Texto 01 Texto 01
+                                        Texto 01 Texto 01 Texto 01 Texto 01 Texto 01 Texto 01 Texto 01 Texto 01 Texto 01
+                                        Texto 01 Texto 01 Texto 01 Texto 01 Texto 01 Texto 01 Texto 01 Texto 01 Texto 01
+                                        Texto 01 Texto 01 Texto 01 Texto 01 Texto 01 Texto 01 Texto 01 Texto 01 Texto 01
+                                        Texto 01 Texto 01 Texto 01 Texto 01 Texto 01 Texto 01 Texto 01 Texto 01 Texto 01
+                                        Texto 01 Texto 01 Texto 01 Texto 01 Texto 01 Texto 01 Texto 01 Texto 01 Texto 01
+                                        Texto 01 Texto 01 Texto 01 Texto 01 Texto 01 Texto 01 Texto 01 Texto 01 Texto 01
+                                        Texto 01 Texto 01 Texto 01 Texto 01 Texto 01 Texto 01 Texto 01 Texto 01 Texto 01
+                                        Texto 01 Texto 01 Texto 01 Texto 01 Texto 01 </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="nav-item-02" role="tabpanel">
+
+                            <div class="row">
+
+                                <div class="col-sm-6">
+
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item"
+                                            src="https://www.youtube.com/embed/DUT5rEU6pqM"></iframe>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-6">
+
+                                    <p>Texto 02 Texto 02 Texto 02 Texto 02 Texto 02 Texto 02 Texto 02 Texto 02 Texto 02
+                                        Texto 02 Texto 02 Texto 02 Texto 02 Texto 02 Texto 02 Texto 02 Texto 02 Texto 02
+                                        Texto 02 Texto 02 Texto 02 Texto 02 Texto 02 Texto 02 Texto 02 Texto 02 Texto 02
+                                        Texto 02 Texto 02 Texto 02 Texto 02 Texto 02 Texto 02 Texto 02 Texto 02 Texto 02
+                                        Texto 02 Texto 02 Texto 02 Texto 02 Texto 02 Texto 02 Texto 02 Texto 02 Texto 02
+                                        Texto 02 Texto 02 Texto 02 Texto 02 Texto 02 Texto 02 Texto 02 Texto 02 Texto 02
+                                        Texto 02 Texto 02 Texto 02 Texto 02 Texto 02 Texto 02 Texto 02 Texto 02 Texto 02
+                                        Texto 02 Texto 02 Texto 02 Texto 02 Texto 02 Texto 02 Texto 02 Texto 02 Texto 02
+                                        Texto 02 Texto 02 Texto 02 Texto 02 Texto 02 Texto 02 Texto 02 Texto 02 Texto 02
+                                        Texto 02 Texto 02 Texto 02 Texto 02 Texto 02 Texto 02 Texto 02 Texto 02 Texto 02
+                                        Texto 02 Texto 02 Texto 02 Texto 02 Texto 02 Texto 02 Texto 02 Texto 02 Texto 02
+                                        Texto 02 Texto 02 Texto 02 Texto 02 Texto 02 </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="nav-item-03" role="tabpanel">
+
+                            <div class="row">
+
+                                <div class="col-sm-6">
+
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item"
+                                            src="https://www.youtube.com/embed/QapfTGTXbxc"></iframe>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-sm-6">
+
+                                    <p>Texto 03 Texto 03 Texto 03 Texto 03 Texto 03 Texto 03 Texto 03 Texto 03 Texto 03
+                                        Texto 03 Texto 03 Texto 03 Texto 03 Texto 03 Texto 03 Texto 03 Texto 03 Texto 03
+                                        Texto 03 Texto 03 Texto 03 Texto 03 Texto 03 Texto 03 Texto 03 Texto 03 Texto 03
+                                        Texto 03 Texto 03 Texto 03 Texto 03 Texto 03 Texto 03 Texto 03 Texto 03 Texto 03
+                                        Texto 03 Texto 03 Texto 03 Texto 03 Texto 03 Texto 03 Texto 03 Texto 03 Texto 03
+                                        Texto 03 Texto 03 Texto 03 Texto 03 Texto 03 Texto 03 Texto 03 Texto 03 Texto 03
+                                        Texto 03 Texto 03 Texto 03 Texto 03 Texto 03 Texto 03 Texto 03 Texto 03 Texto 03
+                                        Texto 03 Texto 03 Texto 03 Texto 03 Texto 03 Texto 03 Texto 03 Texto 03 Texto 03
+                                        Texto 03 Texto 03 Texto 03 Texto 03 Texto 03 Texto 03 Texto 03 Texto 03 Texto 03
+                                        Texto 03 Texto 03 Texto 03 Texto 03 Texto 03 Texto 03 Texto 03 Texto 03 Texto 03
+                                        Texto 03 Texto 03 Texto 03 Texto 03 Texto 03 Texto 03 Texto 03 Texto 03 Texto 03
+                                        Texto 03 Texto 03 Texto 03 Texto 03 Texto 03 </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Formulário -->
+
+    <div class="container">
+
+        <!-- Título Formulário -->
+        <div class="row">
+
+            <div class="col-12 text-center my-5">
+
+                <h1 class="display-4"><i class="fa fa-paper-plane text-primary" aria-hidden="true"></i> Título
+                    Formulário </h1>
+
+            </div>
+
+        </div>
+
+        <!-- Campos Formulário -->
+        <div class="row justify-content-center mb-5">
+
+            <div class="col-sm-12 col-md-12 col-lg-8">
+
+                <form>
+
+                    <div class="form-row">
+
+                        <div class="form-group col-sm-6">
+
+                            <label for="inputNome"> Seu Nome: </label>
+                            <input type="text" class="form-control" id="inputNome" placeholder="Nome">
+
+                        </div>
+
+                        <div class="form-group col-sm-6">
+
+                            <label for="inputSobrenome"> Seu Sobrenome: </label>
+                            <input type="text" class="form-control" id="inputSobrenome" placeholder="Sobrenome">
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="form-group col-sm-12">
+
+                            <label for="inputEndereco"> Seu Endereço: </label>
+                            <input type="text" class="form-control" id="inputEndereco" placeholder="Endereço">
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-sm-6">
+
+                            <label for="inputCidade"> Sua cidade: </label>
+                            <input type="text" class="form-control" id="inputCidade" placeholder="Cidade">
+
+                        </div>
+
+                        <div class="form-group col-sm-4">
+
+                            <label for="selectEstado"> Selecione o seu estado: </label>
+                            <select id="selectEstado" class="form-control">
+                                <option selected> Escolha... </option>
+                                <option> Paraná </option>
+                                <option> Rio Grande do Sul </option>
+                                <option> Santa Catarina </option>
+                            </select>
+
+                        </div>
+
+                        <div class="form-group col-sm-2">
+
+                            <label for="inputCEP"> Seu CEP: </label>
+                            <input type="text" class="form-control" id="inputCEP" placeholder="CEP">
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="form-group col-sm-12">
+
+                            <div class="form-check">
+
+                                <label for="checkboxEmail" class="form-check-label">
+                                    <input type="checkbox" id="checkboxEmail" class="form-check-input"> Desejo receber
+                                    novidades por e-mail
+                                </label>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="col-sm-12">
+
+                            <button type="submit" class="btn btn-primary"> Enviar </button>
+
+                            <!-- Pop Over -->
+                            <a tabindex="0" class="btn btn-secondary ml-2" role="button" data-toggle="popover"
+                                data-placement="right" title="Título"
+                                data-content="Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo Conteúdo ">
+                                Ajuda </a>
+
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-12">
+                <hr>
+            </div>
+
+            <div class="col-sm-4">
+
+                <h3> Título </h3>
+                <p> Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto
+                    Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto
+                    Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto
+                    Texto Texto </p>
+
+            </div>
+
+            <div class="col-sm-4">
+
+                <h3> Menu </h3>
+                <!-- List Group -->
+                <div class="list-group text-center">
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-primary"> Perfil </a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-primary"> Serviçoes</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-primary"> Depoimentos </a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-primary"> Contatos </a>
+                </div>
+
+            </div>
+
+            <div class="col-sm-4">
+
+                <h3> Social </h3>
+                <!-- Button Group -->
+                <div class="btn-group-vertical btn-block btn-group-lg" role="group">
+                    <a class="btn btn-primary" href="#"><i class="fab fa-facebook-square" aria-hidden="true"></i>
+                        Facebook </a>
+                    <a class="btn btn-info" href="#"><i class="fab fa-twitter-square" aria-hidden="true"></i> Twitter
+                    </a>
+                    <a class="btn btn-warning" href="#"><i class="fab fa-instagram-square" aria-hidden="true"></i>
+                        Instagram </a>
+                </div>
+            </div>
+
+            <div class="col-12 mt-5">
+
+                <!-- Blockquote -->
+                <blockquote class="blockquote text-center">
+
+                    <p class="mb-0">
+                        O sucesso não é garantido, mas o fracsso é certo se você não estiver emocionalmente envolvido em
+                        seu trabalho
+                    </p>
+                    <footer class="blockquote-footer">
+                        Biz Stone <cite title="Source Title"> Fundador do Twitter </cite>
+                    </footer>
+                </blockquote>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Model -->
+
+    <div class="modal fade" id="siteModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"> Escondite Inglês </h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span> &times; </span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <p> Bienvenido has llegado
+                        En el momento justo
+                        Y al lugar indicado
+
+                        No todo lo rico engorda
+                        No todo lo bueno es pecado
+
+                        Yo seré tus deseos hechos piernas
+                        Una idea recurrente de la fascinación
+                        Yo seré un complot para tu mente
+                        El objeto y la causa de tu perdición
+                        Y tu buena suerte
+
+                        Cuenta del uno al diez
+                        Y esconda donde puedas verme
+                        Es mi forma de jugar al escondite ingles
+
+                        Besame de una vez
+                        Te amarro a mi sofá burgués
+                        Es mi forma de jugar al escondite
+                        Es mi forma de jugar al escondite
+                        Es mi forma de jugar al escondite ingles</p>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">
+                        Fechar
+                    </button>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="./node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        });
+    </script>
+</body>
+
+</html>
