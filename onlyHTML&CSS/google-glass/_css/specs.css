@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+section#conteudo {
+    width: 1000px;
+    margin: auto;
+}
+
+iframe#frame-specs {
+    width: 380px;
+    height: 280px;
+    border: none;    
+    overflow: hidden;    
+}
+/*
+NÃO FUNCIONA, ADICIONAR NO HTML 'SCROLLING="NO"'
+iframe#frame-specs::-webkit-scrollbar {
+    display: none;
+}
+*/
